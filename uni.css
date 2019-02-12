@@ -1945,7 +1945,6 @@ text0-map-container {
   width: 100%;
   height: 400px;
   background: url(https://images.pexels.com/photos/802024/pexels-photo-802024.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-  background: url("https:st2.depositphotos.com/1001146/8422/i/950/depositphotos_84227198-stock-photo-black-and-white-view-of.jpg");
   background-size: Cover;
   display: grid;
   align-items: center;
@@ -2427,8 +2426,8 @@ material-icons {
 .nav-wrapper {
   position: sticky;
   top: 0px;
-  display: grid;
   display: flex;
+  display: grid;
   align-items: center;
   background: linear-gradient(to right, #f9831f, #ffb113); }
 
