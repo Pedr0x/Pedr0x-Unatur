@@ -2226,13 +2226,37 @@ material-icons {
   .footer {
     grid-template-columns: 1fr;
     grid-template-rows: auto; } }
+.footer-items-container {
+  grid-template-columns: repeat(auto-fit, minmax(15%, 50%));
+  grid-template-rows: 1fr; }
+
 .footer-links-container {
-  display: flex;
   flex-flow: column;
-  margin: 10%; }
+  margin: 10%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr; }
+  .footer-links-container ul {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10%, 50%));
+    justify-items: center; }
+  .footer-links-container .footer-links-container h3 {
+    grid-column: 1/5;
+    grid-row: 1;
+    align-self: center;
+    justify-self: center; }
+
+.footer-xxx {
+  grid-row: 3; }
 
 .footer-link-item {
-  margin: 5px 0; }
+  margin: 5px 0;
+  color: #00b0ff; }
+
+.footer-link-item:hover {
+  transform: translateY(5px);
+  transition: .2s; }
 
 .header {
   display: grid;
